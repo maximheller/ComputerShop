@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { RamComponent } from './ram/ram.component';
+import { RamCreateComponent } from './ram-create/ram-create.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { RamComponent } from './ram/ram.component';
     HomeComponent,
     CounterComponent,
     FetchDataComponent,
-    RamComponent
+    RamComponent,
+    RamCreateComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -29,6 +31,7 @@ import { RamComponent } from './ram/ram.component';
       { path: 'counter', component: CounterComponent },
       { path: 'fetch-data', component: FetchDataComponent },
       { path: 'allram', component: RamComponent },
+      { path: 'ram-create', component: RamCreateComponent },
     ])
   ],
   providers: [],
